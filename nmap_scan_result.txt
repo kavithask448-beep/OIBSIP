@@ -1,0 +1,45 @@
+NMAP SCAN RESULTS
+
+Target:
+127.0.0.1 (localhost)
+
+Operating System:
+Microsoft Windows 10
+OS Details: Windows 10 1809 - 21H2
+
+Open Ports and Services:
+
+1. Port: 135/tcp
+   State: Open
+   Service: MSRPC
+   Description: Microsoft Windows RPC is used for communication between
+   Windows processes and services.
+   Security Consideration: This port should only be accessible where required
+   and should be protected by appropriate firewall rules.
+
+2. Port: 445/tcp
+   State: Open
+   Service: Microsoft-DS
+   Description: This port is commonly associated with Windows file and
+   printer sharing services.
+   Security Consideration: Unnecessary exposure of this service can increase
+   security risk, so access should be restricted to trusted networks.
+
+3. Port: 7070/tcp
+   State: Open
+   Service: RealServer
+   Description: Nmap identified this port as RealServer.
+   Security Consideration: The service should be identified and verified,
+   and it should be disabled if it is not required.
+
+Scan Summary:
+- Host scanned: 1
+- Host status: Up
+- Open TCP ports: 3
+- Closed TCP ports: 997
+- Network distance: 0 hops
+
+Scans Performed:
+1. Basic scan: nmap 127.0.0.1
+2. Service detection: nmap -sV 127.0.0.1
+3. OS detection: nmap -O 127.0.0.1
