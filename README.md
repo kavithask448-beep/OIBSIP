@@ -1,76 +1,30 @@
-# Basic Network Scanning with Nmap
+# OIBSIP Cyber Security Internship
 
-## Objective
+This repository contains my completed tasks for the Oasis Infobyte Cyber Security Internship.
 
-The objective of this task is to perform a basic network scan using Nmap and identify open ports, services, and operating system information on a local system.
+## Task 1: Basic Network Scanning with Nmap
+- Performed network scanning on my local computer.
+- Identified open ports and attempted service detection.
+- **Files:** `basic_scan.png`, `service_detection.png`, `os_detection.png`, `nmap_scan_result.txt`
+- **Demo video:** `demo1.mp4`
 
-## Tools Used
+## Task 2: Basic Firewall Configuration using UFW
+- Configured UFW on Ubuntu running in Oracle VirtualBox.
+- Set default incoming connections to deny and outgoing connections to allow.
+- Verified the firewall status and configuration.
+- **Files:** `Basic-Firewall-Configuration-UFW/`
+- **Demo video:** `demo2.mp4`
 
-- Nmap 7.991
-- Windows Command Prompt
-- Windows 10
+## Task 4: Network Security Threats
+- Prepared a report about common network security threats and prevention methods.
+- **File:** `network_security_threats.md`
 
-## Target
+## Task 5: Social Engineering Attacks
+- Prepared a report about social engineering techniques, their impact, and prevention methods.
+- **File:** `social_engineering_attacks.md`
 
-127.0.0.1 (localhost)
+## Learning Outcomes
+- Learned basic network scanning using Nmap.
+- Practised configuring a firewall with UFW.
+- Improved my understanding of network security threats and social engineering attacks.
 
-The scan was performed only on the local computer.
-
-## Scans Performed
-
-### 1. Basic Network Scan
-
-Command:
-
-nmap 127.0.0.1
-
-This scan identified open and closed TCP ports on the local system.
-
-### 2. Service Version Detection
-
-Command:
-
-nmap -sV 127.0.0.1
-
-This scan attempted to identify the services and their versions running on open ports.
-
-### 3. Operating System Detection
-
-Command:
-
-nmap -O 127.0.0.1
-
-This scan identified the operating system information of the local system.
-
-## Results
-
-The scan identified the following open ports:
-
-| Port | State | Service |
-|------|-------|---------|
-| 135/tcp | Open | MSRPC |
-| 445/tcp | Open | Microsoft-DS |
-| 7070/tcp | Open | RealServer |
-
-The OS detection identified the system as Microsoft Windows 10.
-
-A total of 997 TCP ports were reported as closed.
-
-## Security Considerations
-
-- Open ports should be reviewed to determine whether the associated services are required.
-- Unnecessary services should be disabled where appropriate.
-- Firewall rules should restrict access to services that do not need to be publicly accessible.
-- Service identification should be verified before making security decisions.
-
-## Ethical Use
-
-Nmap should only be used on systems that you own or have permission to test.
-
-This project was performed on the local computer using 127.0.0.1.
-
-## Files Included
-
-- nmap_scan_results.txt
-- README.md
-- Screenshots of scan results
